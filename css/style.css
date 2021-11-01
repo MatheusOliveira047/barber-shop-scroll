@@ -1,0 +1,387 @@
+:root{
+    --color-primary:#917758 ;
+    --color-secudary:#3c2915;
+    --color-primary-light: #f5eee6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+   font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+
+}
+
+/**********
+* HOME
+********/
+.home{
+    background-image: url(../images/bg-home.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.header{
+    padding: 30px 0;
+}
+
+.home .header .nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+   
+}
+.header .nav-bar ul li {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    align-items: center;
+}
+.header .nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;
+}
+.home .header .logo{
+    margin: 30px;
+}
+.header .nav-bar ul li a:hover{
+    color: var(--color-primary) ;
+    border-bottom: 1px solid var(--color-primary);
+}
+
+
+/***************
+* HOME - BANNER
+****************/
+.home .banner{
+    margin: 70px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50% ;
+    height: 270px;
+    margin-left: -385px;
+    width: 770px;
+    **/
+}
+.home .banner span{
+    display: block;
+}
+
+.home .banner .prof{
+    color: var(--color-primary);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.home .banner h1{
+    font-size: 100px;
+}
+.home .banner .melhor{
+    margin: 25px;
+}
+
+
+/***************
+* ABOUT
+****************/
+.about{
+    
+    background-color: var(--color-primary);
+
+}
+
+.about .container{
+    display: flex;
+}
+.about .time{
+    width: 33%;
+    padding: 20px;
+    background-image: url(../images/brush-big.jpg);
+    position: relative;
+    top: -50px;
+}
+.about .experience{
+    width: 66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+.tesou{
+    width: 50px;
+}
+.about .time .overlay{
+    background-color: rgba(0,0,0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.about .time .overlay h3{
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.about .time .overlay h4{
+    font-weight: 400;
+    font-size: 15px;
+    color: gray;
+}
+.map-1{
+    width: 20px;
+}
+.about .time .text{
+    margin: 15px 0;
+}
+.dot{
+    font-size: 25px;
+    color: white;
+}
+.typ{
+    font-size: 25px;
+    font-weight: 200;
+}
+.about .time .overlay .text .contato{
+    color: white;
+}
+
+.about .experience .title h3{
+    font-size: 40px;
+    font-weight: 400;
+}
+.about .experience .title{
+    border-bottom: 2px solid #a38f78;
+    margin-bottom: 40px;
+}
+.about .experience .p-text{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    font-size: 17px;
+}
+.about .experience .p-text .espu{
+    width: 250px;
+}
+
+
+
+
+
+.services{
+    background-color: var(--color-primary-light);
+    color: var(--color-secudary);
+    padding-top: 100px;
+    text-align: center;
+}
+
+.services .nossos h2{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 400;
+}
+.services .conteudo{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.services .conteudo .content{
+    border: 2px solid var(--color-primary);
+    margin: 30px;
+    text-align: center;
+    padding: 40px 0px;
+}
+.services .conteudo .content h4{
+    margin: 10px 0;
+}
+.services .conteudo .content p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.contantos{
+    background-color: var(--color-primary);
+    
+    padding: 100px 0;
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+    height: 100vh;
+}
+
+.contantos .faça{
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contantos form{
+    margin-top: 80px;
+}
+
+.contantos .personal-data{
+    display: flex;
+    justify-content: space-between;
+}
+.contantos .personal-data label{
+    display: block;
+    color: var(--color-primary-light);
+    font-size: 15px;
+}
+
+.contantos .personal-data input, .contantos .personal-data select {
+    padding: 10px;
+    width: 250px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+.texteare label{
+    display: block;
+    margin-top: 30px;
+    color: var(--color-primary-light);
+}
+.enviar{
+    padding: 5px;
+    background-color: var(--color-secudary);
+    color: var(--color-primary-light);
+    width: 100px;
+    font-size: 13px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+.galary{
+    
+    background-color: var(--color-primary-light);
+    padding: 100px 0;
+}
+
+.galary .title-galary{
+    color: var(--color-secudary);
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.galary .picture div{
+    width: 200px;
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+.galary .picture div img{
+    width: 100%;
+    
+   
+}
+.galary .picture{
+    margin: 50px auto;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 800px;
+
+}
+
+
+
+
+.maps{
+
+    padding: 100px 0;
+    background-image: url(../images/bg-location.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.maps .head{
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.maps .head .info{
+    display: flex;
+}
+.maps .head .info .tex span{
+    display: block;
+    color: var(--color-primary-light);
+    margin: 5px;
+    font-size: 13px;
+    font-weight: 100;
+}
+.maps .head .info .icon{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 100%;
+    width: 50px ;
+    height: 50px;
+}
+.maps .map{
+    width: 100%;
+}
+.maps .map iframe{
+    width: 100%;
+}
+
+
+
+.footer{
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    font-size: 12px;
+    text-align: center;
+}
